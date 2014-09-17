@@ -4,20 +4,20 @@ h3
 	text-align: center
 
 .logo-lockup
-	max-width: 700px
+	max-width: 780
+	margin: 0 auto
 	+display(flex)
+	+align-items(center)
+	+justify-content(space-around)
 
 	.logo-img
 		+size(128px)
 		background: url(/assets/img/logo.png)
 		order:3
-		margin: 0 auto
-		+align-items(center)
-		+justify-content(space-around)
 
 	[class^="icon-"]
 		+size(100px)
-		.background: $bgcolor
+		background: $bgcolor
 		border-radius: 50%
 
 		&.icon-pencil
