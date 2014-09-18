@@ -2,6 +2,7 @@ h3
 	@extend %small-bold
 	color: $accent
 	text-align: center
+	padding: 100px 0 30px
 
 .logo-lockup
 	max-width: 780
@@ -15,10 +16,14 @@ h3
 		background: url(/assets/img/logo.png)
 		order: 3
 
+
 	[class^="icon-"]
 		+size(100px)
 		background: $bgcolor
 		border-radius: 50%
+
+		path:
+			fill: $pathfill
 
 		&.icon-pencil
 			order: 1
@@ -29,3 +34,29 @@ h3
 			order: 4
 		&.icon-pencil
 			order: 5
+
+@media screen and (max-width: 650)
+	.logo-lockup
+		display: block
+		text-align: center
+
+		div
+			display: inline-block
+
+		.logo-img
+			display: block
+			background-position: center center
+			background-repeat: no-repeat
+			width: auto
+			margin-bottom: 30px
+
+		[class^="icon-"]
+			margin: 10px
+
+.blurb
+	max-width: 620px
+	padding: 0 15px
+	margin: 50px auto
+	font-size: 24px
+	text-align: center
+	font-weight: 300
